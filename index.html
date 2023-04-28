@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Luxe</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="./img/шапка/SVG/LOG.svg" type="image/x-icon">
+
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- Шапка сайта НАЧАЛО -->
+  <header class="header">
+    <div class="logo">
+      <img src="./img/шапка/SVG/logo_2.svg" alt="">
+    </div>
+    <div class="container header__container">
+      <div class="menu-burger__header">
+          <span></span>
+      </div>
+
+      <nav class="header__nav">
+          <ul class="menu header__menu">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <div class="dropdown">
+              <a onclick="myFunction()" class="dropbtn">Информация <i class="down"></i></a>
+              <div id="myDropdown" class="dropdown-content">
+                <ul class="ul_drop ">
+                  <li class="menu__item"> <a href="#">О нас</a></li>
+                  <li class="menu__item"> <a href="#">Вакансии</a></li>
+                  <li class="menu__item"> <a href="#">Контакты</a></li>
+          </ul>
+      </nav>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="./js/menu.js">
+    $(document).ready(function() {
+    $('.menu-burger__header').click(function(){
+          $('.menu-burger__header').toggleClass('open-menu');
+          $('.header__nav').toggleClass('open-menu');
+          $('body').toggleClass('fixed-page');
+    });
+  });
+</script> 
+
+
+    <!--header_ul end  -->
+
+    <div class="header_items">
+      <div class="svg_loop">
+        <a href="#">
+          <img src="./img/шапка/icons8-search.svg" alt="search">
+        </a>
+      </div>
+      <div class="svg_bascket">
+        <a href="#">
+          <img src="./img/шапка/icons8-basket-50.png.svg" alt="">
+        </a>
+      </div>
+      <button class="button" id="form-open"><img src="./img/шапка/icons8-male-user-50.png.svg" alt=""></button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <section class="first_screen">
+    <h1 class="GLAVA">Украшения из серебра и золота-классика, </h1>
+    <h1 class="GLAVA_1">которая никогда не устаревает</h1>
+    <div class="baton">
+      Узнать больше
+    </div>
+  </section>
+
+  <!-- first_screen -->
+  <!-- poppup  -->
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- ВХОД  -->
+      <div class="form login_form">
+        <form action="#">
+          <h2>Вход</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Введите ваш E-mail" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Введите ваш пароль" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Запомнить</label>
+            </span>
+            <a href="#" class="forgot_pw">Забыли пароль?</a>
+          </div>
+
+          <button class="button">Войти</button>
+
+          <div class="login_signup">У вас нет аккаунта? <a href="#" id="signup"> Зарегистрироваться</a></div>
+        </form>
+      </div>
+
+      <!-- РЕГИСТРАЦИЯ  -->
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Регистрация</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Введите ваш E-mail" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Ваш пароль" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Повторите пароль" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button">Зарегистрироваться</button>
+
+          <div class="login_signup">У вас есть Аккаунт? <a href="#" id="login">Вход</a></div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </section>
+
+  <!-- poppup   end-->
+  <!--КОНЕЦ ШАПКИ  -->
+
+  <section class="contanier_catalog sect_1">
+
+    <div class="slider">
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <img src="./img/слайдер/1.jpg" alt="1">
+            <h2 class="title">
+              Новая коллекция</h2>
+            <p class="swipe_P">Самые популярные украшения весенного сезона</p>
+
+            <div class="btn">Новинка</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/слайдер/2.jpg" alt="2">
+            <h2 class="title">
+              Хиты продаж</h2>
+            <p class="swipe_P">Шестой элемент:стекло с добавлением углерода</p>
+
+            <div class="btn">Хиты продаж</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/слайдер/3.jpg" alt="">
+            <h2 class="title">
+              Уникальные украшения</h2>
+            <p class="swipe_P">С которыми вам не захочется расставаться</p>
+            <div class="btn">Новинка</div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+          },
+
+
+          loop: true,
+
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+
+        });
+      </script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+
+  </section>
+
+
+  <div class="container_catalog">
+    <div class="title_1">
+      <h2>Каталог</h2>
+    </div>
+    <div class="content">
+      <div class="list">
+        <div class="start">
+          <li data-color=".All">Лидеры продаж</li>
+          <li data-color=".New">Новинки</li>
+          <li data-color=".BB">Акции</li>
+        </div>
+
+        <div class="end">
+          <li data-color=".Allan" class="all">Смотреть все
+            <img src="./images/Vector 5.svg" alt="">
+          </li>
+        </div>
+
+      </div>
+
+      <div class="box_flex .All .New">
+        <div class="box ">
+          <div class="box_img_up">
+            <img src="./img/SVG/Ресурс 1.svg" alt="">
+
+
+          </div>
+          <div class="box_img">
+
+            <img src="./img/каталог_товаров/1_mag.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Кольцо из золота с бриллиантами,
+              <br> (Бриллиант 1 шт, 0.022 карат)
+            </p>
+
+
+            <div class="box_bottom">
+              <p>99 999 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box .All .BB">
+          <div class="box_img_up">
+            <img src="./img/SVG/Ресурс 2.svg" alt="">
+
+
+          </div>
+          <div class="box_img">
+
+            <img src="./img/каталог_товаров/3_mag.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Кольцо из золота с бриллиантами
+              <br>(Бриллиант 23 шт, 0,069 карат)
+            </p>
+
+
+            <div class="box_bottom">
+              <p>56 650 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box .All .New">
+          <div class="box_img_up">
+
+          </div>
+          <div class="box_img">
+            <img src="./img/каталог_товаров/4_mag.jpg" alt="">
+
+          </div>
+          <div class="text">
+            <p>Цепь из золота, плетение двойной ромб,
+              <br> (Красное золото 585 проба)
+            </p>
+
+
+            <div class="box_bottom">
+              <p>14888 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box .All .BB">
+          <div class="box_img_up">
+            <img src="./img/SVG/Ресурс 1.svg    " alt="">
+
+          </div>
+          <div class="box_img">
+
+            <img src="./img/каталог_товаров/6_mag.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Кольцо из белого золота с бриллиантом
+              <br> (Бриллиант 1 шт, 0,305 карат)
+            </p>
+
+            <div class="box_bottom">
+              <p>56 999 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="box All New">
+          <div class="box_img_up">
+          </div>
+          <div class="box_img">
+            <img src="./img/каталог_товаров/5_mag.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Серьги из белого золота с бриллиантами
+              <br>(
+              Бриллиант 2 шт, 0.522 карат)
+            </p>
+
+
+            <div class="box_bottom">
+              <p>77 777 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box All New">
+          <div class="box_img_up">
+            <img src="./img/SVG/Ресурс 1.svg" alt="">
+
+          </div>
+          <div class="box_img">
+
+            <img src="./img/каталог_товаров/2_mag.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Кольцо из золота с бриллиантом,<br>( Бриллиант 1 шт, 0.031 карат ) </p>
+
+            <div class="box_bottom">
+              <p>35 500 ₽</p>
+              <div class="btn_bb">
+                Купить
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js">
+  let list = document.querySelectorAll(".list li");
+  let box = document.querySelectorAll(".box");
+
+list.forEach((el)=>{
+    el.addEventListener("click" , (e)=>{
+        list.forEach((el1)=>{
+            el1.style.color = "#423f3e        ";
+            el1.style.borderBottom = "none";
+        })
+        e.target.style.borderBottom = "1px solid #fff"
+        box.forEach((el2)=>{
+            el2.style.display = "none";
+        })
+        document.querySelectorAll(e.target.dataset.color).forEach((el3)=>{
+            el3.style.display = "flex";
+        })
+    })
+})
+  </script>
+  <section class="gal_top container_gallery">
+    <h2>коллекция</h2>
+ 
+  </section>
+  <section class="galery container_gallery">
+
+    <img src="./img/галерея фотографий/woman-s-arms-wearing-beautiful-jewelry.png" alt="" class="first img-1">
+
+    <img src="./img/галерея фотографий/top-view-of-sterling-silver-earrings-with-diamonds-with-studs-on-black-wall.png"
+      alt="" class="vniz  img-2 ">
+
+    <img src="./img/галерея фотографий/fd05844cc3fc8cbe729bc3dcf8f4a842 1.png" alt="" class="img-3">
+
+    <img src="./img/галерея фотографий/twjy6e19mmx522ijrnj6czj7d4meo8dj.png" alt="" class="img-4">
+
+
+
+  </section>
+
+
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <p>&copy;2023 Ainaz Sultanov</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</body>
+
+</html>
